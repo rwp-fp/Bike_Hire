@@ -1,0 +1,42 @@
+---
+title: "Bike Hire Report"
+author: "Richard"
+date: "02/09/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+
+#set options to stop R code showing in final report
+knitr::opts_chunk$set(echo = FALSE)
+
+#Load Libraries
+library(dplyr)
+library(ggplot2)
+library(caret)
+library(corrplot)
+```
+
+# Bike Hire Scheme Project
+
+## Executive Summary
+
+This report presents a summary of a project completed as the final part of the **HarvardX Data Science Program**. The project uses the data analysis and R programming skills learned during the program to estimate the ratings given to movies based on a range of predictors.
+
+The project uses a dataset of 10 million ratings of movies. All movies are given a rating between 0 and 5. The aim of the project is to develop a methodology and R code which correctly predicts the rating a movie will receive.
+
+The methodology I developed uses a range of predictors to estimate the rating a movie will receive. The starting point for the prediction is the average rating across all movies, this is:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
